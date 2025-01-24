@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mauli Water Filter Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #5a677c, #6da3c2);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to right, #5a677c, #6da3c2);
+      padding: 0.7rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.5s;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+    .hero {
+      background: url('background.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      transition: .2s ease-in-out .5s ;
+    }
+    .hero::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+  
+.hero::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+   
+.hero:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      padding: 0 1rem;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .service {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .service img {
+      width: 100%;
+      max-width: 250px;
+      height: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .service-info {
+      flex: 1;
+    }
+    .service-info h3 {
+      margin: 0 0 1rem 0;
+      color: #007BFF;
+    }
+    .service-info p {
+      margin: 0 0 1rem 0;
+      line-height: 1.6;
+    }
+    .form-container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+    }
+    .form-container h2 {
+      margin-bottom: 1rem;
+      color: #007BFF;
+    }
+    .form-container label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+      font-weight: bold;
+    }
+    .form-container input, .form-container textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .form-container button {
+      padding: 0.8rem 1.5rem;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .form-container button:hover {
+      background: #0056b3;
+    }
+    footer {
+      background: linear-gradient(to right, #0056b3, #007BFF);
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+    footer p {
+      margin: 0;
+    }
+    .solution {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
+    }
+    @media (max-width: 768px) {
+      .solution {
+        flex-direction: column;
+      }
+      .solution img {
+        order: 2;
+      }
+      .solution .text-content {
+        order: 1;
+      }
+    }
+    .solution img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .solution .text-content {
+      flex: 1;
+    }
+    .solution .text-content h2 {
+      color: #28a745;
+      margin-bottom: 1rem;
+    }
+    .solution .text-content p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    .solution .text-content a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .solution .text-content a:hover {
+      text-decoration: underline;
+    }
+    a.contact-link {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.contact-link:hover {
+      text-decoration: underline;
+    }
+    .map-container {
+      margin-top: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mauli Water Filter Service & Repair</h1>
+    <p>Your trusted partner in water filter maintenance and repair</p>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <h1>Pure Water, Healthy Life</h1>
+  </section>
+  <main class="container">
+    <section class="solution">
+      <img src="DALL·E 2025-01-24 10.57.55 - Generate a high-quality image of a modern water filter system in use, showing clean and sleek design in a home kitchen setting, with stainless steel a.jpg" alt="Water Filter">
+      <div class="text-content">
+        <h2>Trusted Water Filter Care</h2>
+        <h1>Your solution for clean water</h1>
+        <p>Mauli Water Filter Service and Repairing offers swift and affordable maintenance and repair services for water filters in Pune. We understand that clean and safe water is essential for your health, which is why we prioritize regular maintenance to keep your water filter in top condition. Our expert team is dedicated to providing cost-effective solutions without compromising on quality. Experience reliable service and ensure your drinking water is always safe with Mauli Water Filter Service and Repairing.</p>
+        <a href="#contact">Get in touch</a>
+      </div>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service">
+        <img src="images 4.jpg" alt="Filter Installation">
+        <div class="service-info">
+          <h3>Filter Installation</h3>
+          <p>We provide expert installation services for a wide range of water filters.</p>
+        </div>
+      </div>
+      <div class="service">
+        <img src="images 6.jpg" alt="Maintenance">
+        <div class="service-info">
+          <h3>Maintenance</h3>
+          <p>Ensure your water filter is functioning perfectly with our maintenance services.</p>
+        </div>
+      </div>
+      <div class="service">
+        <img src="images 1.jpg" alt="Repairs">
+        <div class="service-info">
+          <h3>Repairs</h3>
+          <p>Quick and reliable repair services to fix any issues with your water filter.</p>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>At Mauli Water Filter Service, we are committed to providing high-quality water filter solutions for your home and business. Our team of experts ensures customer satisfaction with timely and reliable services.</p>
+    </section>
+    <section id="contact" class="form-container">
+      <h2>Contact Us</h2>
+      <p>Name: Gaurav</p>
+      <p>Email: <a href="mailto:gauravdpatil198@gmail.com" class="contact-link">gauravdpatil198@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919822312087" class="contact-link">+91 9822312087</a></p>
+      <p>Address: Pune, Maharashtra</p>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.494614830111!2d73.85674361437558!3d18.52043008740517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07cdd43df6b%3A0x7b0593b14c4e53e3!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1673797489173!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mauli Water Filter Service. All rights reserved.</p>
+  </footer>
+</body>
+</html>
